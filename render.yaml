@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: dual-stage-fraud-call-detector
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: WHISPER_MODEL_SIZE
+        value: tiny
+      - key: ANTI_SPOOF_MAX_SECONDS
+        value: "5"
+      - key: MAX_UPLOAD_MB
+        value: "20"
+      - key: SPOOFING_WEIGHT
+        value: "0.5"
+      - key: INTENT_WEIGHT
+        value: "0.5"
+      - key: ALLOWED_ORIGINS
+        value: "*"

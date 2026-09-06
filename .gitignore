@@ -1,0 +1,108 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Temporary files
+# =========================
+
+temp_uploads/
+tmp/
+*.tmp
+*.temp
+
+# =========================
+# Audio files
+# =========================
+# Do not commit uploaded recordings or datasets.
+
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.webm
+
+# =========================
+# Model weights / checkpoints
+# =========================
+
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.keras
+*.pb
+
+# =========================
+# Testing / Coverage
+# =========================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.cache/
+.hypothesis/
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Build / Distribution
+# =========================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# =========================
+# IDEs / Editors
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS generated files
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
