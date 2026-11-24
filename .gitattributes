@@ -1,4 +1,7 @@
+# Exclude HTML from language statistics
 *.html linguist-detectable=false
 *.htm linguist-detectable=false
+static/index.html linguist-detectable=false
+
+# Include Python
 *.py linguist-detectable=true
-*.ipynb linguist-language=Python
